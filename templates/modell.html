@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+            border-bottom: 2px solid #555;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid #555;
+        }
+
+        .navbar a:last-child {
+            border-right: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .model-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            width: 1200px;
+            height: 100px;
+            background-color: #333;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .model-button:hover {
+            background-color: #555;
+        }
+
+        .model-info {
+            display: none;
+        }
+
+        .model-info.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="data.html">Data</a>
+    <a href="classes.html">Classes</a>
+    <a href="modell.html">Models</a>
+    <a href="index.html">Model Executor</a>
+</div>
+
+<div class="container">
+    <h1>MODELS</h1>
+    <button class="model-button" onclick="showModel('model1')" style="background-color: #a8d8ea;">Sequential model for binary classification</button>
+    <div id="model1-info" class="model-info">
+        <h2>Sequential model for binary classification</h2>
+        <p>
+            A Deep Artificial Neural Network (Deep ANN) is a type of artificial neural network (ANN) that consists of multiple hidden layers between the input and output layers. These hidden layers enable the network to learn increasingly abstract and complex features from the input data. Deep ANNs are a fundamental component of deep learning, a subset of machine learning that focuses on learning representations of data.
+        </p>
+        <p>
+            The model starts with a data preprocessing layer, typically a Flatten layer, which converts the input image data into a one-dimensional format suitable for further processing. Following this preprocessing layer, the model comprises one or more Dense layers, serving as the primary components responsible for feature extraction and classification.
+        </p>
+        <p>
+            These Dense layers consist of interconnected neurons, each applying a transformation to the input data based on learned weights and biases. In the final Dense layer, the number of neurons corresponds to the number of classes in the classification task. Each neuron in this output layer represents a distinct class, and the softmax activation function produces a probability distribution over the classes, indicating the likelihood of the input data belonging to each class.
+        </p>
+        <p>
+            During training, the Sequential model adjusts its internal parameters (weights and biases) based on the provided training data, optimizing its performance to accurately classify input images into the correct classes. This optimization process involves iteratively adjusting the model parameters to minimize a chosen loss function, such as categorical cross-entropy, which quantifies the disparity between predicted and true class labels. The stochastic gradient descent (SGD) optimizer is employed to adjust model parameters based on computed losses. Finally, the accuracy metric is utilized to assess how effectively the model predicts the presence of lung cancer.
+        </p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model2')" style="background-color: #B7CEEC	;">equential model to classify project data by adding various optimization techniques ADAM, SGD, RMSPROP</button>
+    <div id="model2-info" class="model-info">
+        <h2>Sequential model to classify project data by adding various optimization techniques ADAM, SGD, RMSPROP</h2>
+        <p>Optimization techniques play a crucial role in enhancing the training process by adjusting the model parameters to minimize the loss function. In the implementation, the Keras Sequential API is utilized to construct deep learning architectures tailored for binary classification of lung cancer images. [2]The system may be significantly impacted by the use of an optimisation strategy to address artificial neural network restrictions. CT scans are utilised in the optimisation process. This method yields better lung tumour results by accurately identifying the images. The Sequential model, a fundamental type of neural network architecture, is employed. The Sequential model consists of a linear stack of layers, where each layer performs specific operations on the input data sequentially. This structure allows for straightforward construction of deep learning models by adding layers one after another.
+</p>
+        <p>The ADAM optimizer is characterized by its adaptive learning rate, which adjusts dynamically during training based on the gradient magnitudes of the parameters. This adaptive nature enables ADAM to converge faster and more reliably compared to traditional optimization techniques such as SGD. [3]The networks weights were trained by using the Adam optimizer to minimise the cross-entropy loss after being initialised from a normal distribution. On the other hand, the SGD optimizer is a classic optimization algorithm that updates model parameters based on the gradient of the loss function. Lastly, the RMSPROP optimizer shares similarities with ADAM but omits the momentum component. RMSPROP calculates the moving average of the squared gradients to adaptively adjust the learning rates for each parameter. While RMSPROP may exhibit slower convergence compared to ADAM, it tends to be more robust in scenarios with sparse gradients.</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model3')" style="background-color: #C9DFEC	;">Sequential model to classify project data into multiple classes</button>
+    <div id="model3-info" class="model-info">
+        <h2>Sequential model to classify project data into multiple classes</h2>
+        <p>This methodology involves constructing a neural network model capable of analyzing lung cancer images and assigning them to different classes based on specific characteristics or features present in the images. The Sequential model, a fundamental type of neural network architecture, is employed. The Sequential model consists of a linear stack of layers, where each layer performs specific operations on the input data sequentially. This structure allows for straightforward construction of deep learning models by adding layers one after another. []To guarantee the fewest false positives and negative instances for lung cancer and renal illnesses, respectively, an efficient multi-class model is put out. By preventing overfitting situations, the model enhances the convergence of the classification model. The model fared better than the most advanced methods already in use.
+</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model4')" style="background-color: #D5D6EA	;">Binary Classification with Mini-batch Evaluations</button>
+    <div id="model4-info" class="model-info">
+        <h2>Binary Classification with Mini-batch Evaluations</h2>
+        <p>Random mini-batch evaluation is a fundamental technique in deep learning used to train neural networks efficiently. In this approach, instead of processing the entire dataset at once, the training data is divided into small, randomized subsets known as mini-batches. During each training iteration, a mini-batch is randomly sampled from the dataset, and the neural network parameters are updated based on the error computed on that mini-batch. By randomly selecting mini-batches, the training process becomes more stochastic, helping the model generalize better to unseen data and reducing the risk of overfitting. Moreover, mini-batch evaluation enables parallelization and optimization of computation, making it feasible to train deep learning models on large-scale datasets efficiently. This approach also allows for smoother convergence and faster training times compared to batch gradient descent, as the updates to the model parameters are more frequent and can adapt to the data's variations. Both batch gradient descent and stochastic gradient descent are used in mini-batch gradient descent. Training data is divided into n mini-batches using mini batch gradient descent, and an update is made for each one. By using micro batches, gradient computation would be redundantly done and the gradients themselves would have timeless variation, resulting in quicker training and less costfunction fluctuations during the training process.
+</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model5')" style="background-color: #E3E4FA;">Convolutional Neural Network</button>
+    <div id="model5-info" class="model-info">
+        <h2>Convolutional Neural Network</h2>
+        <p>A Convolutional Neural Network (CNN) is a type of artificial neural network specifically designed to process and analyze structured grid-like data, such as images. CNNs have revolutionized the field of computer vision and are widely used in various tasks such as image classification, object detection, and image segmentation. The core building blocks of CNNs are convolutional layers, pooling layers and fully connected layers. Convolutional layers apply convolution operations to the input data using a set of learnable filters (also called kernels). These filters detect patterns indicative of lung abnormalities. Pooling layers are used to downsample the feature maps generated by convolutional layers, reducing their spatial dimensions while retaining important information. Common pooling operations include max pooling and average pooling, which extract the maximum or average value from a window of values, respectively. After several convolutional and pooling layers, CNNs often include one or more fully connected layers at the end of the network. These layers process the high-level features extracted by earlier layers and map them to the output classes or labels. [4]For example, the CNN model may produce very poor detection performance if the surrounding environments of the items of interest contain a lot of extraneous features, such as sounds and artefacts, or if they do not carry enough contextual information about the target objects.</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model6')" style="background-color: #DBE9FA;">Convolutional Neural Network with Regularization </button>
+    <div id="model6-info" class="model-info">
+        <h2>Convolutional Neural Network with Regularization </h2>
+        <p>Regularization refers to a set of techniques aimed at preventing overfitting, which occurs when a model learns to perform well on the training data but fails to generalize to unseen data. Overfitting can occur when the model becomes too complex or flexible, capturing noise and irrelevant patterns in the training data. Regularization techniques introduce constraints on the model's parameters or learning process to reduce its capacity or flexibility, thereby improving its ability to generalize to new data. The suggests a brand-new entropy variance dropout regularisation technique to get beyond the current restrictions and improve the accuracy of the model. With the use of information entropy and variance, the suggested regularisation technique eliminates the co-adaptation features. The convolutional neural network (CNN) model is employed for the detection of lung cancer, utilizing dropout regularization to enhance accuracy and performance.
+</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model7')" style="background-color: #C6DEFF">Visual Geometry Group (VGG)</button>
+    <div id="model7-info" class="model-info">
+        <h2>Visual Geometry Group (VGG)</h2>
+        <p>VGG, which stands for Visual Geometry Group, is a widely-used convolutional neural network (CNN) architecture primarily employed in computer vision tasks, particularly image classification. Developed by researchers at the University of Oxford, VGG gained prominence for its simplicity and effectiveness. Its architecture is characterized by a deep structure consisting of multiple layers of convolutional and max-pooling operations, followed by fully connected layers for classification. The objective of VGG is to extract hierarchical features from input images, gradually learning abstract representations that enable accurate classification. One notable aspect of VGG is its uniform design, where convolutional layers have consistent configurations across the network, facilitating implementation and experimentation. Variants like VGG16 and VGG19, differing in the number of layers, offer flexibility in balancing model complexity and performance. Transfer-learning models used by Artificial Intelligence (AI) systems have demonstrated significant promise in improving the accuracy and speed of lung cancer detection and therapy. By enabling the adaptation of pre-existing models to new tasks, transfer learning makes medical data analysis more effective and efficient. Furthermore, by helping clinicians determine the precise type and stage of lung cancer, these tools can help them make therapy decisions.
+</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model8')" style="background-color: #B0E0E6;">Recurrent Neural Network</button>
+    <div id="model8-info" class="model-info">
+        <h2>Recurrent Neural Network</h2>
+        <p>Recurrent Neural Networks (RNNs) are a class of neural networks specifically designed to effectively process sequential data by maintaining a form of memory within the network. RNNs possess loops within their architecture, allowing them to persist information across time steps. This enables RNNs to exhibit dynamic temporal behavior, making them well-suited for tasks involving sequential or time-series data. The fundamental component of an RNN is the recurrent connection, which allows information to be passed from one time step to the next. At each time step, the RNN takes an input vector and combines it with the internal state (hidden state) from the previous time step to produce an output and update its internal state. This recursive operation enables RNNs to capture dependencies and patterns within sequential data. It is a CNN subtype in which the connections between the nodes form a structure known as the with development of data. Because it is capable of handling temporal information effectively, the result appears to be the best when distinguishing between the more recent and the older data.
+</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model9')" style="background-color: #D5D6EA;">Long Short-Term Memory (LSTM)</button>
+    <div id="model9-info" class="model-info">
+        <h2>Long Short-Term Memory (LSTM)</h2>
+        <p>Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) architecture that is specifically designed to address the vanishing gradient problem. LSTMs utilize a more complex architecture involving a series of specialized gates to selectively retain and forget information over time. These gates are responsible for controlling the flow of information through the LSTM cell, allowing it to capture long-term dependencies in sequential data. []One of the most often used RNN variations is Long Short-Term Memory (LSTM), which uses three gates—forget, input, and output—to learn both long-term and short-term relationships between features. </p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model10')" style="background-color: #a8d8ea;">Autoencoder</button>
+    <div id="model10-info" class="model-info">
+        <h2>Autoencoder</h2>
+        <p>Autoencoders are a type of neural network architecture used in deep learning for unsupervised learning and dimensionality reduction tasks. They consist of an encoder and a decoder, with the encoder compressing the input data into a latent representation and the decoder reconstructing the original input from this representation. The primary objective of an autoencoder is to learn a compact and informative representation of the input data, capturing its essential features while minimizing reconstruction error. One of the key applications of autoencoders is in data compression and denoising. By learning a compressed representation of the input data, autoencoders can effectively compress the information while preserving important features, making them useful for tasks such as image and signal compression. Additionally, autoencoders can be used for anomaly detection by reconstructing normal data accurately while producing higher reconstruction errors for anomalous data points.</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model11')" style="background-color: #B7CEEC;">AutoEncoder + ResNet</button>
+    <div id="model11-info" class="model-info">
+        <h2>AutoEncoder + ResNet</h2>
+        <p>The combination of an autoencoder with a Residual Network (ResNet) architecture presents an innovative approach in the field of deep learning. Autoencoders, known for their ability to learn efficient data representations through unsupervised learning, are coupled with ResNet, a deep neural network architecture renowned for its effectiveness in handling vanishing gradient problems and facilitating the training of very deep networks. By integrating the two, the resulting model inherits the reconstruction capabilities of autoencoders while leveraging the resilience and feature extraction prowess of ResNet. This hybrid architecture not only excels in feature learning and reconstruction tasks but also demonstrates robustness and adaptability across various domains, making it a compelling choice for tasks such as image denoising, compression, and anomaly detection.</p>
+    </div>
+
+    <button class="model-button" onclick="showModel('model12')" style="background-color: #C9DFEC;">Variational Autoencoder</button>
+    <div id="model12-info" class="model-info">
+        <h2>Variational Autoencoder</h2>
+        <p>VAEs are capable of not only encoding input data into a latent space but also generating new data samples by sampling from a learned probability distribution. This is achieved through the introduction of a novel training framework that combines both reconstruction accuracy and latent space regularization objectives. By optimizing a joint loss function that encompasses both reconstruction error and a divergence measure between the learned latent space distribution and a prior distribution, VAEs effectively learn a continuous and smooth latent representation of the input data, enabling seamless generation of novel samples with diverse characteristics. This inherent ability to generate new data points while preserving meaningful structure within the latent space makes VAEs indispensable in a wide range of applications, including image generation, data augmentation, and representation learning.</p>
+    </div>
+
+</div>
+</div>
+
+
+
+<script>
+    function showModel(modelId) {
+        var modelInfo = document.getElementById(modelId + "-info");
+        if (modelInfo.classList.contains("active")) {
+            modelInfo.classList.remove("active");
+        } else {
+            modelInfo.classList.add("active");
+        }
+    }
+</script>
+
+</body>
+</html>

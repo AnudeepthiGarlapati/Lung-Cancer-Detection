@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+            border-bottom: 2px solid #555;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid #555;
+        }
+
+        .navbar a:last-child {
+            border-right: none;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .paragraph-image {
+            max-width: 40%;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="data.html">Data</a>
+    <a href="classes.html">Classes</a>
+    <a href="modell.html">Models</a>
+    <a href="index.html">Model Executor</a>
+</div>
+
+<div class="container">
+    <h1>Lung Cancer Dataset</h1>
+    <p>
+        <strong>The lung cancer dataset</strong> is collected from the <em>Iraq-Oncology Teaching Hospital/National Centre for Cancer Diseases (IQ-OTH/NCCD)</em> was gathered during a three-month period in autumn 2019 at the aforementioned specialty hospitals.
+    </p>
+    <p>
+        It comprises both healthy subjects' and patients' CT scans that have been diagnosed with lung cancer at various stages. In these two centres, radiologists and oncologists marked IQ-OTH/NCCD slides.
+        <!-- Image added for the second paragraph -->
+    </p>
+    <p>
+        A total of <strong>1097 pictures</strong>, or CT scan slices from <strong>110 instances</strong>, are included in the collection. The three groups of these cases are <em>malignant</em>, <em>benign</em>, and <em>normal</em>.
+    </p>
+    <p>
+        Of these, forty have been diagnosed as malignant; fifteen as benign; and fifty-five as normal instances. Originally, the CT scans were gathered in DICOM format. Siemens' SOMATOM scanner is in use. The CT procedure consists of the following: a window width of 350 to 1200 HU, a window centre of 50 to 600, a slice thickness of 1 mm, and a voltage of 120 kV. holding your breath while fully inspired. Analyses were conducted once all photos were de-identified.
+    </p>
+    <p>
+        The oversight review board decided not to require written consent. The collaborating medical centres' institutional review boards authorised the study. Every scan comprises many slices. These slices come in an assortment of 80 to 200 pieces, each of which depicts a different side and angle of a human chest. Gender, age, level of education, place of residence, and living situation are all different throughout the 110 cases. A portion of them work for the Transport and Oil Ministries in Iraq, while others are farmers and investors. The majority of them are from the Iraqi provinces of Baghdad, Wasit, Diyala, Salahuddin, and Babylon, which are located in the country's centre.
+    </p>
+    <p>
+        The total number of classes present in the dataset are three. The benign class contains a total of 120 images. The malignant class contains a total of 561 images. The normal class contains a total of 416 images.
+    </p>
+    <div class="button-container">
+        <a href="classes.html">Classes</a>
+    </div>
+</div>
+
+</body>
+</html>

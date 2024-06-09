@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+            border-bottom: 2px solid #555;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid #555;
+        }
+
+        .navbar a:last-child {
+            border-right: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .class-box {
+            background-color: #e6e6fa; /* Pastel light color for the box */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .class-box img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container a {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 50px; /* Add space above the button */
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="data.html">Data</a>
+    <a href="classes.html">Classes</a>
+    <a href="modell.html">Models</a>
+    <a href="index.html">Model Executor</a>
+</div>
+
+<div class="container">
+    <h1>Lung Cancer Classes</h1>
+
+    <div class="class-box" style="background-color: #b0e0e6;"> <!-- Different pastel light color -->
+        <div>
+            <h2>Normal Cases</h2>
+            <p>
+                Normal lung tissue refers to the healthy, non-cancerous cells and structures that make up the lungs. In a healthy individual, the lungs perform vital functions such as oxygen exchange and carbon dioxide removal.
+            </p>
+        </div>
+        <img src="/static/images/normal.png" alt="Normal Cases">
+    </div>
+
+    <div class="class-box" style="background-color: #ffe4e1;">
+        <div>
+            <h2>Benign Cases</h2>
+            <p>
+                Benign lung tumors are non-cancerous growths that develop in the lungs. These tumors typically grow slowly and do not pose an immediate threat to health.
+            </p>
+        </div>
+        <img src="static/images/bengin.png" alt="Benign Cases">
+    </div>
+
+    <div class="class-box" > <!-- Different pastel light color -->
+        <div>
+            <h2>Malignant Cases</h2>
+            <p>
+                Malignant lung cancer refers to cancerous tumors that develop in the lungs. These tumors can be further classified into two main types: non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC).
+            </p>
+        </div>
+        <img src="static/images/malignant.png" alt="Malignant Cases">
+    </div>
+
+    <div class="image-container">
+        <img src="static/images/classes.PNG" alt="Classes">
+    </div>
+
+    <div class="button-container">
+        <a href="data.html">Back to Data</a>
+    </div>
+
+</div>
+
+</body>
+</html>
